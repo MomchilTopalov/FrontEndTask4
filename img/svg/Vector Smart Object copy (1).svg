@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13" width="20" height="13">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 1 0" /> </filter>
+		<image width="29" height="19" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOSAxOSIgd2lkdGg9IjI5IiBoZWlnaHQ9IjE5Ij4KCTxzdHlsZT4KCQl0c3BhbiB7IHdoaXRlLXNwYWNlOnByZSB9CgkJLnNocDAgeyBmaWxsOiAjNGI0YjRiIH0gCgk8L3N0eWxlPgoJPGcgaWQ9IlBhZ2UgMSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik0yOC4xMyw1LjQyaC00LjM3YzAsMCAtMC4wNiwtMC4yIC0wLjE4LC0wLjMybC01LC00Ljk0Yy0wLjI0LC0wLjI0IC0wLjY0LC0wLjIxIC0wLjg4LDAuMDNjLTAuMjUsMC4yNCAtMC4yNSwwLjUzIDAsMC43N2w0LjU2LDQuNDVoLTE1LjczbDQuNTYsLTQuNDNjMC4yNCwtMC4yNCAwLjI0LC0wLjU4IDAsLTAuODJjLTAuMjQsLTAuMjQgLTAuNjQsLTAuMjEgLTAuODgsMC4wM2wtNSw0Ljg5Yy0wLjEyLDAuMTIgLTAuMTgsMC4zMyAtMC4xOCwwLjMzaC00LjM3Yy0wLjM1LDAgLTAuNjIsMC42NSAtMC42MiwxYzAsMC4zNSAwLjI4LDEgMC42MywxaDEuODljMCwwIC0wLjAxLC0wLjE2IDAsLTAuMTJsMi41LDExLjc1YzAuMDYsMC4yOSAwLjMyLDAuMzcgMC42MSwwLjM3aDE3LjVjMC4zLDAgMC41NSwtMC4yMSAwLjYxLC0wLjVsMi41LC0xMS42MmMwLjAxLC0wLjA0IDAsMC4xMiAwLDAuMTJoMS44OWMwLjM1LDAgMC42MywtMC42NSAwLjYzLC0xYzAsLTAuMzUgLTAuMjgsLTEgLTAuNjIsLTF6IiAvPgoJPC9nPgo8L3N2Zz4="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Vector Smart Object copy" style="filter: url(#flt1)" href="#img1" transform="matrix(0.696,0,0,0.669,0,0)"/>
+</svg>

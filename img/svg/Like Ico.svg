@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" width="19" height="16">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.204   0 0 0 0 0.251   0 0 0 0 0.294   0 0 0 1 0" /> </filter>
+		<image width="30" height="24" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyNCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjI0Ij4KCTxzdHlsZT4KCQl0c3BhbiB7IHdoaXRlLXNwYWNlOnByZSB9CgkJLnNocDAgeyBmaWxsOiAjMDAwMDAwO3N0cm9rZTogIzAwMDAwMDtzdHJva2Utd2lkdGg6IDAuNSB9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiPgoJCTxwYXRoIGlkPSJQYXRoIDEiIGNsYXNzPSJzaHAwIiBkPSJNMjcuMTcgMTMuMjRMMTUuMTQgMjIuNTlMMy4wOCAxMy4yNEwzLjAzIDEzLjE1QzEuODggMTEuMjEgMS4yNSAxMC4xNCAxLjI1IDguNEMxLjI1IDQuNDYgNC40IDEuMjUgOC4yOCAxLjI1QzExLjAyIDEuMjUgMTMuNTIgMi44NyAxNC42NyA1LjM4QzE0Ljc1IDUuNTYgMTQuOTMgNS42OCAxNS4xMyA1LjY4QzE1LjMyIDUuNjggMTUuNSA1LjU2IDE1LjU4IDUuMzhDMTYuNzEgMi45IDE5LjIyIDEuMyAyMS45NyAxLjNDMjUuODUgMS4zIDI5IDQuNDggMjkgOC4zOUMyOSAxMC4xNCAyOC4zNyAxMS4yMSAyNy4xNyAxMy4yNFpNMjEuOTcgMC4zQzE5LjE2IDAuMyAxNi41NyAxLjc3IDE1LjEzIDQuMTFDMTMuNjggMS43NCAxMS4wOCAwLjI1IDguMjggMC4yNUMzLjg1IDAuMjUgMC4yNSAzLjkxIDAuMjUgOC40QzAuMjUgMTAuNDIgMS4wMSAxMS43MSAyLjE2IDEzLjY2TDIuMTcgMTMuNjdDMi4xOSAxMy43MyAyLjIzIDEzLjc5IDIuMjcgMTMuODRMMTQuNzcgMjMuNjdDMTQuODcgMjMuNzcgMTUgMjMuODMgMTUuMTQgMjMuODNMMTUuMTUgMjMuODNDMTUuMjkgMjMuODMgMTUuNDIgMjMuNzcgMTUuNTIgMjMuNjdMMjcuOTggMTMuODRDMjguMDIgMTMuNzkgMjguMDUgMTMuNzQgMjguMDcgMTMuNjhMMjguMDggMTMuNjhDMjkuMjMgMTEuNzEgMzAgMTAuNDIgMzAgOC4zOUMzMCAzLjkzIDI2LjQgMC4zIDIxLjk3IDAuM1oiIC8+Cgk8L2c+Cjwvc3ZnPg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Like Ico" style="filter: url(#flt1)" href="#img1" transform="matrix(0.628,0,0,0.664,0,0)"/>
+</svg>

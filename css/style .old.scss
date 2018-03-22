@@ -1,0 +1,72 @@
+$grid-gutter: 15px;
+$grid-total: 1200px;
+$fluid-gutter: ($grid-gutter * 100% ) / $grid-total ;
+$col-number: 12;
+
+.clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.grid-row {
+	max-width: $grid-total;
+	margin: 0 auto;
+	@extend .clearfix;
+}
+
+[class^="col-"] {
+	float: left;
+	// margin: 0 ($grid-gutter ) 20px;
+	margin: 0 $fluid-gutter 20px;
+	box-sizing: border-box;
+	
+	//TODO: for demo ourpose only - delete later
+	height: 100px;
+	border: 1px solid #000;
+	background-color: #666;
+}
+// @mixin generate-grid-static($cols, $gutter, $totalWidth) {
+
+// 	$colWidth: ($totalWidth / $cols) - ($gutter * 2);
+
+// 	@for $i from $cols through 1 {
+// 		.col-#{$i} {
+// 			width: $colWidth * $i + (($gutter * 2) * ( $i - 1));
+// 		}
+// 	}
+// }
+
+// @include generate-grid-static($col-number, $grid-gutter, $grid-total);
+
+@mixin generate-grid-fluid($cols, $gutter, $totalWidth) {
+
+	$colWidth: ($totalWidth / $cols) - ($gutter * 2);
+
+	@for $i from 1 through $cols {
+		.col-#{$i} {
+			width: $colWidth * $i + (($gutter * 2) * ( $i - 1));
+		}
+	}
+
+	@media(max-width: 768px) {
+
+		%mobile-col {
+			width: 100%;
+			float: none;
+		}
+		@for $i from 1 through $cols {
+			.col-#{$i} {
+				@extend %mobile-col;
+			}
+		}
+	}
+}
+
+
+@include generate-grid-fluid($col-number, $fluid-gutter, 100%);

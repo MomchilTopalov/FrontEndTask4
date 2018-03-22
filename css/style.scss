@@ -1,0 +1,287 @@
+$grid-gutter: 15px;
+$grid-total: 1200px;
+$fluid-gutter: ($grid-gutter * 100% ) / $grid-total ;
+$col-number: 12;
+$total-height: 2865px;
+$canvas: url(../img/canvas.png);
+$heading: 36px;
+// ********************
+// BASIC
+// ********************
+* {
+	margin: 0;
+	padding: 0;
+}
+$bg-img: url(../img/bg.png);
+body {
+	background: $bg-img no-repeat center center fixed;
+}
+a {
+	text-decoration: none;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin generate-round-object($object, $size) {
+
+	%circle {
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+	}
+	#{$object} {
+		@extend %circle;
+		
+	}
+}
+
+// ********************
+// SECTION
+// ********************
+.section-header {
+	font-size: $heading;
+	text-transform: uppercase;
+}
+.arivals-header,
+.sales-header{
+	text-align: center;
+}
+// ********************
+// COLORS
+// ********************
+$orange: #ff5911;
+$red: #e12d3f;
+$green: #2ed966;
+$blue: #3ab2ff;
+$grey: #333f4b;
+$white: #fff;
+
+.c-orange{ color: $orange; }
+.c-red{ color: $red; }
+.c-green{ color: $green; }
+.c-blue{ color: $blue; }
+.c-grey{ color: $grey; }
+.c-white{ color: $white; }
+.bc-orange{ background-color: $orange; }
+.bc-red{ background-color: $red; }
+.bc-green{ background-color: $green; }
+.bc-blue{ background-color: $blue; }
+.bc-grey{ background-color: $grey; }
+.bc-white{ background-color: $white; }
+
+// ********************
+// GRID
+// ********************
+.grid-row {
+	max-width: $grid-total;
+	margin: 0 auto;
+	@extend .clearfix;
+}
+
+[class^="col-"],
+[class*="col-"] {
+	float: left;
+	margin: 0 $fluid-gutter 20px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+}
+
+@mixin generate-grid-fluid($cols, $gutter, $totalWidth) {
+
+	$colWidth: ($totalWidth / $cols) - ($gutter * 2);
+
+	@for $i from 1 through $cols {
+		.col-#{$i} {
+			width: $colWidth * $i + (($gutter * 2) * ( $i - 1));
+		}
+	}
+
+	@media(max-width: 768px) {
+
+		%mobile-col {
+			width: 100%;
+			float: none;
+		}
+		@for $i from 1 through $cols {
+			.col-#{$i} {
+				@extend %mobile-col;
+			}
+		}
+	}
+}
+ 
+@include generate-grid-fluid($col-number, $fluid-gutter, 100%);
+
+
+// ********************
+// HEADER
+// ********************
+$header-margin: 27px / $total-height * 100%;
+.site-heaer{
+	width: 100%;
+	
+}
+.contacts,
+.social {
+	margin: $header-margin 0;
+}
+.contacts {
+	float: left;
+}
+
+.social {
+	float: right;
+}
+
+.main-nav {
+	&-menu{
+		float: left;
+	}
+	&-user-btns{
+		float: right;
+	}
+	&-option{
+		font-size: 16px;
+		text-tranform: capitalize;
+	}
+	.item-counter {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		text-align: center;
+	}
+}
+
+// ********************
+// LOAD MORE
+// ********************
+.canvas {
+	width: 100%;
+}
+
+.img-holder {
+	display: block;
+	width: 100%;
+
+}
+
+
+// ********************
+// NEW ARIVALS
+// ********************
+$na-item-margin: (25.5px / 365px) * 100%;
+
+.na-item {
+	text-align: center;
+	background: #fff;
+	&-img-holder {
+		margin: $na-item-margin 0;
+	}
+	&-name,
+	&-price,
+	&-sizes,
+	&-colors,
+	&-user-buttons {
+		display: block;
+		margin: $na-item-margin 0;
+	}
+	&-name,
+	&-price,
+	&-sizes {
+		font-size: 18px;
+	}
+	&-name {
+		text-transform: capitalize;
+	}
+	&-color {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+	}
+	&-user-buttons {
+		border-top: 1px solid black;
+	}
+}
+
+// ********************
+// LOAD MORE
+// ********************
+.load-more {
+	background-color: #fff;
+}
+.lm-handler {
+	text-align: center;
+}
+.loader {
+	margin: 0 auto;
+	display: block;
+	&-component {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}
+}
+
+// ********************
+// BEST
+// ********************
+
+
+// ********************
+// PROMO
+// ********************
+.discount,
+.promo-info {
+	float: left;
+}
+.discount {
+	width: 70px;
+    height: 70px;
+    margin: 5px 60px;
+    position: relative;
+    transform: rotate(135deg);
+    text-align: center;
+    &:after {
+	    content: "";
+	    display: block;
+	    width: 80%;
+	    height: 100%;
+	    margin: 0 auto;
+	    position: absolute; 
+	    top: -7px;
+	    left: 10%;
+	    border-bottom: 7px solid #ff8f5f;
+	    border-top: 7px solid #ff8f5f;
+	}
+}
+.safe {
+	position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 12px;
+	font-style: italic;
+	text-transform: capitalize;
+    transform: rotate(-135deg);
+
+}
+.promo{
+	&-info {
+		margin: 25px 0;
+	}
+	&-heading {
+		text-transform: uppercase;
+	}
+	
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #333f4b } 
+	</style>
+	<path id="Counter Bg" class="shp0" d="M0,10c0,4.97 4.03,9 9,9c4.97,0 9,-4.03 9,-9c0,-4.97 -4.03,-9 -9,-9c-4.97,0 -9,4.03 -9,9z" />
+</svg>
